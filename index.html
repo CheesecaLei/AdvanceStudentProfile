@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchesca Lei M. Arcega - Digital Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ACTIVITY 2 - Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-heart"></i> Chesca
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#profile" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#hobbies" class="nav-link">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Profile -->
+    <div class="container">
+        <header class="profile-header" id="profile">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="Franchesca.jpeg" alt="Franchesca" id="profilePic">
+                    <div class="kitty-dancing" id="dancingKitty">
+                        <img src="kitty-dancing.gif" alt="Dancing Hello Kitty" class="kitty-animated" id="kittyAnimated">
+                    </div>
+                </div>
+            </div>
+            <h1 class="name">Franchesca Lei M. Arcega</h1>
+            <p class="title">3rd Year BSIT at Gordon College</p>
+            <!-- ACTIVITY 2 - Dynamic Greeting -->
+            <p class="greeting" id="dynamicGreeting">Hello! Welcome to my profile!</p>
+            <button class="welcome-btn" onclick="showWelcome()">
+                <i class="fas fa-heart"></i> Say Hello!
+            </button>
+            <button class="rain-btn" onclick="makeItRain()">
+                <i class="fas fa-sparkles"></i> Make it magical
+            </button>
+        </header>
+
+        <!-- Bio -->
+        <section class="bio-section" id="about">
+            <h2>About Me</h2>
+            <p class="bio-text" id="bioText">
+             Hi! My name is Chesca, currently a BS in Information Technology student in Gordon College. 
+             I've experienced being the project manager of multiple projects and also I was a Quality Assurance Specialist.
+             I am the type of person that always leads and communicates about a project. 
+             I am always commited to everything that I do, that is why I am also currently in my 2nd term
+             as a president in my program organization.
+            </p>
+            <button class="color-change-btn" onclick="changeBioColor()">
+                <i class="fas fa-palette"></i> Change Bio Color
+            </button>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="hobbies-section" id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item">
+                    <i class="fas fa-gamepad"></i>
+                    <div class="hobby-content">
+                        <h3>Gaming</h3>
+                        <p>I love playing Mobile Legends with friends during my free time!</p>
+                    </div>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-tv"></i>
+                    <div class="hobby-content">
+                        <h3>Watching TV Series</h3>
+                        <p>I enjoy spending my time in bed while watching my favorite shows.</p>
+                    </div>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-walking"></i>
+                    <div class="hobby-content">
+                        <h3>Taking a Walk</h3>
+                        <p>I enjoy exploring different places with people while talking about our busy lives.</p>
+                    </div>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-book"></i>
+                    <div class="hobby-content">
+                        <h3>Reading a Book</h3>
+                        <p>I enjoy spending my time reading multiple stories in wattpad or even in an actual book.</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills-section" id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Problem Solving</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-file-powerpoint"></i>
+                    <span>MS PowerPoint</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-file-word"></i>
+                    <span>MS Word</span>
+                </div>  
+            </div>
+        </section>
+
+        <!-- ACTIVITY 2 - Improved Social Media Cards -->
+        <section class="social-section">
+            <h2>Connect With Me</h2>
+            <div class="social-cards">
+                <div class="social-card">
+                    <a href="https://github.com/CheesecaLei" target="_blank" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <div class="social-info">
+                            <h3>GitHub</h3>
+                            <p>View my projects</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="social-card">
+                    <a href="https://www.linkedin.com/in/franchesca-lei-arcega-389780334/" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="social-info">
+                            <h3>LinkedIn</h3>
+                            <p>Connect professionally</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="social-card">
+                    <a href="https://www.facebook.com/franchescalei.arcega" target="_blank" class="social-link facebook">
+                        <i class="fab fa-facebook"></i>
+                        <div class="social-info">
+                            <h3>Facebook</h3>
+                            <p>Let's be friends</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTIVITY 2 - Contact Form -->
+        <section class="contact-section" id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>Feel free to reach out if you'd like to collaborate, have questions, or just want to chat!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>franchescaarcega@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+63 939 9416 764</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Olongapo City, Philippines</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
